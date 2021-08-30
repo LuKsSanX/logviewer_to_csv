@@ -1,2 +1,2 @@
 # logviewer_to_csv
-Python based converter to LogViewer files to csv
+LogViewer files converter to csv Python based
