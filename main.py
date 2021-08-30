@@ -45,15 +45,13 @@ with open(file=in_file_path, mode='r') as in_file:
 
             date = date.group()
             row[0] = date[1:-1]
-            row[3] = str(row[3]).replace(date, '')
 
             time = time.group()
             row[1] = time[:-2]
-            row[3] = str(row[3]).replace(time, '')
 
             scope = scope.group()
             row[2] = scope[:-2]
-            row[3] = str(row[3]).replace(scope, '')
+
+            row[3] = str(row[3]).replace(date + time + scope, '')
 
 print(f'saved on {out_file_path}')
-
